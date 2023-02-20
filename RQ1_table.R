@@ -13,13 +13,4 @@ weekend <- math_alcohol %>%
 
 highest_mean_drinking <- left_join(workday, weekend)
 
-view(student_pass)
-
-student_pass <- math_alcohol %>% 
-  group_by(G3) %>% 
-  summarize(drinking_level = round(mean(Dalc), 2))
-  
-
-ggplot(data = student_pass, aes(x = drinking_level)) +
-  geom_histogram(bins = 10, colour = 1, fill = "white") + 
-  xlab("Drinking Level in Workday")
+view(highest_mean_drinking)
