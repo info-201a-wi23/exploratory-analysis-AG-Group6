@@ -37,7 +37,7 @@ For our project, we want to analyze how different factors and high school studen
 1. Which gender has a higher average rating on workday and weekend alcohol consumption?
 2. Does the amount of student alcohol consumption depends on the amount of free time afterschool they have?
 3. Do the education levels of parents influence students' performances at school?
-4. What is the most negative and positive influential factor on academic success?
+4. How does alcohol consumption impact academic performance among students?
 5. Were there any factors that correlated with lower alcohol consumption levels?
 
 The dataset we choose from Kaggle provides us with data about the general background of the student and their family. It also records student's drinking level and their grades over three periods for Math class and Portuguese language class. We want to explore if any factors recorded in the dataset are related to the level of students' alcohol consumption. Specifically, we want to examine if there is a relationship between student alcohol consumption and factors like gender, family relationships, and parents' education level. And also, we wonder what contributes to the most positive and negative effects on student's academic success. Our project aims to find ways to help high school students improve their academic performances and reduce their alcohol consumption.
