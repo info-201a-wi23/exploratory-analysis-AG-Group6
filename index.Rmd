@@ -5,50 +5,90 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+High School Student Alcohol Consumption and Related Factors
 
 ### Authors
 
-Names of your team members
+Josefina Albert jalbert5@uw.edu
+
+Caroline Fang ytf113@uw.edu
+
+Yusen Liang yusenl2@uw.edu
+
+Zulin Luo lawclrr@uw.edu
+
 
 ### Date
 
-Winter 2022
+Winter 2/20/2022
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our project aims to find relationships between students' alcohol consumption and different factors by analyzing the dataset. The dataset provides information that allows us to find ways to help students improve their academic performances and reduce their alcohol consumption by analyzing the factors, including various social, economic, academic, and environmental variables, and alcohol consumption ratings.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+High School Student; Alcohol Consumption; Family background; Educational Levels; Academic Performance
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+For our project, we want to analyze how different factors and high school students' alcohol consumption behavior are related to each other. It is important to understand what is influencing the habit of student drinking, and how their drinking behavior will affect their class/academic performance. There are four questions we want to mainly explore with the data:
+
+1. Which gender has a higher average rating on workday and weekend alcohol consumption?
+2. Does the amount of student alcohol consumption depends on the amount of free time afterschool they have?
+3. Do the education levels of parents influence students' performances at school?
+4. What is the most negative and positive influential factor on academic success?
+5. Were there any factors that correlated with lower alcohol consumption levels?
+
+The dataset we choose from Kaggle provides us with data about the general background of the student and their family. It also records student's drinking level and their grades over three periods for Math class and Portuguese language class. We want to explore if any factors recorded in the dataset are related to the level of students' alcohol consumption. Specifically, we want to examine if there is a relationship between student alcohol consumption and factors like gender, family relationships, and parents' education level. And also, we wonder what contributes to the most positive and negative effects on student's academic success. Our project aims to find ways to help high school students improve their academic performances and reduce their alcohol consumption.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Alcohol consumption among adolescents has become one of the public health problems of global concern. Compared with adults, adolescents are physically and psychologically immature. The consequences of alcohol will not only affect the health of young people, but also easily lead to inappropriate violence or sexual behavior, traffic accidents, interrelationship influence, and academic grade fluctuation. These three articles describe drinking among high school students from the United States, Canada, and northeastern Portugal. They all collected data on the age, gender, academic performance, and frequency and amount of drinking of the study student population. These factors are all connected to the dataset we studied, and we can use the data of these three additional research articles to compare and study their data and results. In the study “The effects of alcohol use on academic achievement in high school, Economics of Education Review” (https://www.sciencedirect.com/science/article/abs/pii/S0272775710000804), researchers examine the relationship between student alcohol consumption and student grade point average (GPA) using data from the U.S. National Longitudinal Study of Adolescent Health. The article found that alcohol consumption had a small negative effect on male students’ GPAs and no significant effect on female students’ GPAs. However, alcohol consumption increased school absences and difficulty completing school-related tasks. In another study “Identifying patterns of alcohol use among secondary school students in Canada: A multilevel latent class analysis”(https://www.sciencedirect.com/science/article/abs/pii/S0306460319302849), researchers aim to see if there are some social or family factors associated with the amount and pattern of alcohol consumption among students. The article found a significant association between gender and membership in the alcohol drinking level (nondrinkers to heavy drinkers), with the male sex being associated with increased odds of membership in high-risk drinking groups. Other factors are not as significantly associated with alcohol consumption as the gender factor. We also include the study “Pattern of Alcohol Consumption by Young People from North Eastern Portugal”(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5836530/) to support and cross-analyze our dataset since our dataset collects information from two Portugal schools. This study also classified students’ drinking behavior and analyze their academic performances. With these three data, we can comprehensively judge whether there are some same phenomena or factors that lead to students' drinking behaviors and habits by comparing the conditions of different countries and the included research factors. And also look if there are some supplements or related information that we can use for our project’s later progress.
+
+Reference:
+
+Ana I. Balsa, Laura M. Giuliano, Michael T. French, The effects of alcohol use on academic achievement in high school, Economics of Education Review, Volume 30, Issue 1, 2011, Pages 1-15, ISSN 0272-7757, https://doi.org/10.1016/j.econedurev.2010.06.015.
+
+Mahmood R. Gohari, Richard J. Cook, Joel A. Dubin, Scott T. Leatherdale, Identifying patterns of alcohol use among secondary school students in Canada: A multilevel latent class analysis, Addictive Behaviors, Volume 100, 2020, 106120, ISSN 0306-4603, https://doi.org/10.1016/j.addbeh.2019.106120.
+
+Gonçalves, I. A., & Carvalho, A. A. S. (2017). Pattern of Alcohol Consumption by Young People from North Eastern Portugal. Open medicine (Warsaw, Poland), 12, 494–500. https://doi.org/10.1515/med-2017-0068
 
 ### The Dataset
 
 Where did you find the data? Please include a link to the data source  
-Who collected the data?  
+We find our dataset from kaggle, and here is the link to the data source:           https://www.kaggle.com/datasets/uciml/student-alcohol-consumption
+
+Who collected the data?
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. A. Brito and J. Teixeira Eds., Proceedings of 5th Future Business Technology Conference
+
 How was the data collected or generated?  
+The UCI machine learning repository generated this dataset based on two previous studies of alcohol consumption in students.
+
 Why was the data collected?  
+This data was collected to compare and make observations about a variety of factors and effects on students’ alcohol consumption.
+
 How many observations (rows) are in your data?  
+There are 382 rows.
+
 How many features (columns) are in the data?  
+There are 33 columns.
+
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+As our data compares a variety of socio-economic factors with a student’s chosen behavior, we need to understand the imbalances in resources and support among the participants of the study, and the effect that may have on their chosen behaviors. Additionally, it can be easy to categorize certain behaviors as negative, but as data scientists it’s important to look at all observations through a non-biased lens.
+
 What are possible limitations or problems with this data?   (at least 200 words)
+This data set deals with a variety of environmental factors that could potentially impact a student and then compares them to their specific patterns and behaviors, including the consumption of alcohol. These factors include everything from their age, sex, address, parent’s occupations, absences, academic failings, and health. Throughout our project, we must refer to the notion that correlation does not always equal causation. Some of these factors, such as a mother or father’s job, may align with a higher amount of alcohol consumption of a student but not be the actual cause for that consumption amount. We will have to take this into consideration when making conclusions for certain trends that we may observe throughout the project. Additionally, some of our information is self-reported data, and there may be a margin of error where some participants didn’t answer realistically or honestly. The participants are school aged young adults who may not want to answer truthfully personal factors such as the amount of alcohol they chose to consume or how often they go out. The most accurate information for each participant may be impossible to ever really know, so we will have to use the data we are given and make our best conclusions to our research questions after evaluating the data.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Student alcohol consumption has been a controversial social issue. From the dataset we analyze, we’ll be able to see the possible correlations, not necessarily direct cause and effect relationships, between alcohol consumption and many other factors. Then we’ll be able to see if it is alcohol leading to certain behaviors, or it is under certain conditions students consume more alcohol. For example, people can see visually the correlations between alcohol consumption of the students with their family size, presence of both parents, and education levels of parents, etc. By reading the data, we’ll be able to answer questions like “What are the most possible factors that cause students to consume alcohol more?” and “What are the most direct influences brought by the over-consuming of alcohol?” Psychologists and policymakers could use such data to help analyze teenagers’ mental health conditions and to aid mentally or physically. And although not very broad, the two datasets in two different classes help a bit in providing less variances and less biases in the data.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+We’ve never utilized Github for group collaboration before. We spent some time working out how to submit our own component without interfering with the work of the other team members. We decided to use Google Docs to capture each team member's ideas and suggestions for the responsible portion of other team members because it is tough to find a time to get everyone together to discuss the project because we all have various schedules. This can considerably improve our efficiency. Narrowing down our topics at the outset of a project is the hardest part. In the beginning, we also had some difficulties with the choice of data sets. The datasets we found for some of the genres we are interested in have some issues, such as not enough observations, not enough characteristics, or the provided features are not conducive to our data analysis. We attempt to list all potential data sets in Google Docs, and we select the ones we wish to study based on our ability to elicit relevant research questions.
+
+One possible challenge for the broad idea of the project might be that because our data is only extracted from students in 2 schools, the sample range is not broad enough for the result to be globally applicable. For example, the data cannot be convincing enough to represent countries like the US because of legal drinking age limits the data the are allowed to be extracted. Therefore, we can only imply a correlation between students' alcohol consumption and other factors, instead of clearly proving a direct causal relationship between alcohol consumption and other factors. There will also be a limit in the dataset we currently have, which are caused by some missing data and unclear data in this dataset. For example, many data under colunm "father's job" contains an "other" value instead of a specific job title. It would somehow influence the data interpretation. This might be improved if we could collect a supplemental dataset from other resources.
 
 ### Summary Information
 
