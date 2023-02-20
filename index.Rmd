@@ -106,9 +106,26 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
+I chose this chart to analyze the relationship between the amount of student alcohol consumption and the amount of free time after school. The reason I chose the boxplot is that it is helpful to display the distribution of student alcohol consumption with different free time after school and some outliers which may influence the result. The chart exhibits that the elongation of free time after school will increase the amount of student alcohol consumption.
+
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, code = readLines("chart 1.R")}
+library(ggplot2)
+library(dplyr)
+
+students_in_math <- read.csv("https://raw.githubusercontent.com/info-201a-wi23/exploratory-analysis-AG-Group6/main/student-mat.csv", stringsAsFactors = FALSE)
+new_students_in_math <- 
+  students_in_math %>%
+  mutate(amount_alcohol = Dalc + Walc)
+
+ggplot(data = new_students_in_math) +
+  geom_boxplot(aes(x = freetime, y = amount_alcohol, group = freetime)) +
+  labs(
+    title = "The relationship between student alcohol consumption and free time afterschool",
+    x = "Free Time Afterschool",
+    y = "The Amount Of Student Alcohol Consumption"
+  )
 ```
 
 ### Chart 2
