@@ -23,10 +23,10 @@ summary_info$amount_alcohol <- data_in_math %>% mutate(amount_alcohol = Dalc + W
 summary_info$alc_by_age <- data_in_math %>% group_by(age) %>% summarize(average = mean(Dalc))
 
 # Chart 3: 
-# Sort students with grades better than 60% (12/20)
+# Sort students with final grades greated than and equal to 60% (12/20)
 summary_info$good_grades <- data_in_math %>% filter(data_in_math$G3 >= 12)
 
-# Sort students with grades less than 60% (12/20)
+# Sort students with final grades less than 60% (12/20)
 summary_info$not_as_good <- data_in_math %>% filter(data_in_math$G3 < 12)
 
 # Chose work day alcohol consumption because it is more significant

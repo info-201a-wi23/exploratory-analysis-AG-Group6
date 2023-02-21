@@ -91,7 +91,9 @@ One possible challenge for the broad idea of the project might be that because o
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-### Table
+There are 8 values calculated by our group. The first two values are the average alcohol consumption of males and females on weekdays and weekends. They are calculated to be put in the same table so that we can compare the average drinking habit of male and female students during workdays and weekends. The second value is the total alcohol consumption throughout the week. We added the value of students' drinking levels on workdays and weekends together and added a new column in the dataset. It is to study students' drinking habits throughout the week and used in a boxplot to visualize the relationship between students' free time and their weekly drinking habits. The third one is the average workday drinking levels of students of different ages. It group student by their age and is used to find the relationship between age and drinking habit on workdays with a scatterplot. The fourth and fifth ones are the classification of students with final grades below 60% and students with final grades equal to or higher than 60%. After sorting students with their final grades, their workday alcohol consumption will be used to create a histogram that compares the drinking habits of the two groups. 
+
+### Table (Zulin Luo)
 
 Include a table of aggregate information
 
@@ -118,7 +120,7 @@ highest_mean_drinking <- left_join(workday, weekend)
 highest_mean_drinking
 ```
 
-### Chart 1
+### Chart 1 (Caroline Fang)
 
 Include a chart
 
@@ -146,13 +148,13 @@ ggplot(data = new_students_in_math) +
   )
 ```
 
-### Chart 2
+### Chart 2 (Josefina Albert)
 
 Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-### Chart 3
+### Chart 3 (Yusen Liang)
 
 Include a chart
 
