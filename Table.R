@@ -1,4 +1,4 @@
-library(tidyverse)
+library(dplyr)
 
 math_alcohol <- read.csv("https://raw.githubusercontent.com/info-201a-wi23/exploratory-analysis-AG-Group6/main/student-mat.csv", stringsAsFactors = FALSE)
 
@@ -12,4 +12,4 @@ weekend <- math_alcohol %>%
 
 highest_mean_drinking <- left_join(workday, weekend)
 
-view(highest_mean_drinking)
+highest_mean_drinking
