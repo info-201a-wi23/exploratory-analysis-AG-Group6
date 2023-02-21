@@ -158,8 +158,7 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-I chose histogram to visualize the amount of drinking people in each drinking level for workdays. I divided the students with those who gained final grade greater than 60% and those who gained lower than 60% and see if those who have lower grade tend to have higher alcohol consumption index. I chose workdays' consumption instead of weekends' consumptions because I think workdays' consumptions could be more significant factor to be considered regarding influences on grades.
-However, visually the distribution of drinking level does not change significantly, most students have drinking level 1 for both groups and therefore this is not a very significant proof of drinking levels directly influences students' final grades.
+I chose histogram to visualize the amount of drinking people in each drinking level for workdays. I divided the students with those who gained final grade greater than 60% and those who gained lower than 60% and see if those who have lower grade tend to have higher alcohol consumption index. I chose workdays' consumption instead of weekends' consumption because I think workdays' consumption could be more significant factor to be considered regarding influences on grades. In the visualization, the darker graph is the work day alcohol consumption for students who gained more than 60% in final and the lighter graph is the work day alcohol consumption for students who gained less than 60% in final.However, visually the distribution of drinking level does not change significantly, most students have drinking level 1 for both groups and therefore this is not a very significant proof of drinking levels directly influences students' final grades. 
 
 ``````{r, echo = FALSE, code = readLines("chart 3.R")}
 library(ggplot2)
