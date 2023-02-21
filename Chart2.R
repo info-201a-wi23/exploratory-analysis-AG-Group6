@@ -1,3 +1,6 @@
+library(ggplot2)
+library(dplyr)
+
 math_df <- read.csv("https://raw.githubusercontent.com/info-201a-wi23/exploratory-analysis-AG-Group6/main/student-mat.csv", stringsAsFactors = FALSE)
 
 ## Average alcohol consumption for students based on their age
