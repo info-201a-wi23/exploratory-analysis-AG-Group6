@@ -154,6 +154,25 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
+I chose to create a scatterplot displaying a factor that correlates with lower alcohol consumption levels. To do this, I looked at the data and decided to evaluate the effect age had on alcohol consumptin. I grouped each age by year and then found an average for each years alcohol consumption. From here I made a data frame with two columns and created a scatterplot. It reveals that from ages 15-19, reported alcohol consumption is fairly similar, averaging around a 1 on the consumption scale. Past 19, into years 20, 21, and 22 the reported consumption levels exponentially grows, eaching a 5 by age 22. Overall, this scatterplot shows that lower age, specifically below age 20, correlates with a lower alcohol consumption level
+
+``````{r, echo = FALSE, code = readLines("Chart2.R")}
+
+# Read in the file
+math_df <- read.csv("https://raw.githubusercontent.com/info-201a-wi23/exploratory-analysis-AG-Group6/main/student-mat.csv", stringsAsFactors = FALSE)
+
+# Create a new data frame with the average alcohol consumption for students grouped by their age
+alc_by_age <- math_df %>% group_by(age) %>% summarize(average = mean(Dalc))
+
+# Scatter plot with age in the x-axis and average consumption in the y-axis
+ggplot(alc_by_age) +
+  geom_point(mapping = aes(x = age, y = average)) +
+  labs(title = "Avg Alcohol Consumption Per Age", x = "Student Age", y = "Avg. Reported Consumption") +
+  theme(panel.background = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+```
+
 ### Chart 3 (Yusen Liang)
 
 Include a chart
