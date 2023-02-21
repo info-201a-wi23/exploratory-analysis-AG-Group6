@@ -95,7 +95,28 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 Include a table of aggregate information
 
+In this table, I am addressing the average drinking rating for different gender on workdays and weekends. I use the groupby function to organize the data according to sex, and I use the round function to keep the mean value in 2 digits to make it more readable. Since there are only 2 values in two columns to compare, I didn't sort them in any specific order. The table contains 3 columns: sex, mean workday drinking rating, and mean weekend drinking rating, and I am comparing the values in the last two columns. It shows the average drinking habit of males and females during workdays and weekends. By looking at this table, we can compare the drinking habits of the two sex, and it shows that on average, male drinks more than female on both workday and weekends.
+
 Describe why you included the table and what information it reveals
+
+```{r, echo = FALSE, code = readLines("table.R")}
+
+library(tidyverse)
+
+math_alcohol <- read.csv("https://raw.githubusercontent.com/info-201a-wi23/exploratory-analysis-AG-Group6/main/student-mat.csv", stringsAsFactors = FALSE)
+
+workday <- math_alcohol %>% 
+  group_by(sex) %>% 
+  summarize(mean_workday_drink = round(mean(Dalc), 2))
+
+weekend <- math_alcohol %>% 
+  group_by(sex) %>% 
+  summarize(mean_weekend_drink = round(mean(Walc), 2))
+
+highest_mean_drinking <- left_join(workday, weekend)
+
+highest_mean_drinking
+```
 
 ### Chart 1
 
